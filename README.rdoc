@@ -1,6 +1,30 @@
 = kame
 
-Description goes here.
+Kame (Japanese for turtle) is an implementation of the Logo programming language built as a challenge to myself. I wanted a simple way to introduce programming in Ruby to my daughter and thought this would be fun.
+
+With Kame, you control the movement of a turtle around the screen by programming commands. With these simple commands your turtle will draw you a picture.
+
+It's a nice introduction to programming for kids and will also help their maths :o)
+
+== Install
+
+TODO
+
+== Simple Sample
+
+TODO
+
+== Running
+
+TODO
+
+== Options
+
+TODO
+
+== Commands
+
+TODO
 
 == Contributing to kame
  
@@ -14,6 +38,6 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2011 Andy Pike. See LICENSE.txt for
-further details.
+Copyright (c) 2011 Andy Pike. See LICENSE.txt for further details.
+
 

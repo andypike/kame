@@ -17,9 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "kame"
   gem.homepage = "http://github.com/andypike/kame"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "andy@andypike.com"
+  gem.summary = %Q{Kame (Japanese for turtle) is an implementation of the Logo programming language for kids}
+  gem.description = %Q{Kame (Japanese for turtle) is an implementation of the Logo programming language built as a challenge to myself. I wanted a simple way to introduce programming in Ruby to my daughter and thought this would be fun. With Kame, you control the movement of a turtle around the screen by programming commands. With these simple commands your turtle will draw you a picture. It's a nice introduction to programming for kids and will also help their maths :o)}
   gem.authors = ["Andy Pike"]
   # dependencies defined in Gemfile
 end
@@ -30,14 +29,6 @@ Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
   test.pattern = 'test/**/test_*.rb'
   test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
 end
 
 task :default => :test
