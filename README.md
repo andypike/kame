@@ -18,10 +18,15 @@ Each command is on a new line and they are executed in order.
 
 As this is using Ruby, you also have access to Ruby constructs such as loops and functions.
 
+Notice
+------
+
+I've tested this on OSX and it works fine. However, there seems to be an issue on Windows 7 when creating the Gosu window. I'll investigate.
+
 Install
 -------
 
-		gem install kame
+	gem install kame
 
 Simple Sample
 -------------
