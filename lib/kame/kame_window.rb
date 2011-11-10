@@ -4,7 +4,7 @@ class KameWindow < Gosu::Window
   def initialize(lines, options)
     @width = options[:width]
     @height = options[:height]
-    @background_colour = Gosu::Color.argb(KameColours::lookup[options[:background]])
+    @background_colour = Gosu::Color.argb(KameColours::lookup[options[:paper]])
     @speed = options[:speed]
     @lines = lines
     @first_frame = Gosu::milliseconds

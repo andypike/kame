@@ -15,7 +15,7 @@ class Kame
     opts = {
       :width => 640,
       :height => 480,
-      :background => :white,
+      :paper => :white,
       :title => 'Kame',
       :speed => 10
     }.merge(options)
