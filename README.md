@@ -1,22 +1,22 @@
 kame (Japanese for turtle)
 ==========================
 
-Kame is an implementation of the Logo programming language built as a challenge to myself. I wanted a simple way to introduce programming in Ruby to my daughter and thought this would be fun.
+kame is an implementation of the Logo programming language built as a challenge to myself. I wanted a simple way to introduce programming in Ruby to my daughter and thought this would be fun.
 
-With Kame, you control the movement of a turtle around a piece of paper by programming commands. With these simple commands your turtle will draw you a picture.
+With kame, you control the movement of a turtle around a piece of paper by programming commands. With these simple commands your turtle will draw you a picture.
 
 It's a nice introduction to programming for kids and will also help their maths :o)
 
 What it does
 ------------
 
-You create a Ruby file with commands that instructs a turtle (kame) to move around. You can tell the turtle to move forward or backward, rotate, put his pen down on the paper or pick it up. You can also change the colour of the pen and background. 
+You create a Ruby file with commands that instructs a turtle (kame) to move around. You can tell the turtle to move forward or backward, rotate, put his pen down on the paper or pick it up. You can also change the colour of the pen and paper. 
 
 The turtle starts in the top left corner of the kame window and will move from there depending on your commands.
 
 Each command is on a new line and they are executed in order.
 
-As this is using ruby, you also have access to Ruby constructs such as loops and functions.
+As this is using Ruby, you also have access to Ruby constructs such as loops and functions.
 
 Install
 -------
@@ -43,6 +43,8 @@ Create a new text file called square.rb and paste the below code in and save it:
 		    forward 50     
 		  end
 		end
+
+You can find more samples in my [kame_samples](https://github.com/andypike/kame_samples) repro.
 
 Running
 -------
