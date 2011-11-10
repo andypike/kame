@@ -51,6 +51,8 @@ Create a new text file called square.rb and paste the below code in and save it:
 
 You can find more samples in my [kame_samples](https://github.com/andypike/kame_samples) repro.
 
+![kame flower](https://github.com/andypike/kame_samples/raw/master/kame-flower.png)
+
 Running
 -------
 
