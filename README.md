@@ -88,13 +88,13 @@ Colours
 Here is a list of the available colours:
 
 		:white
-    :black
-    :red
-    :green
-    :blue
-    :yellow
-    :pink
-    :grey
+		:black
+		:red
+		:green
+		:blue
+		:yellow
+		:pink
+		:grey
 
 Options
 -------
@@ -110,8 +110,8 @@ Here is a list of all options with their default values (all are optional):
 		:width => 640 		# The width of the paper in pixels
 		:height => 480		# The height of the paper in pixels
 		:paper => :white	# The colour of the paper (from the list above)
-		:title => 'Kame'  # The window title
-		:speed => 10			# The speed that the turtle draws. This is how many lines per second should be drawn
+		:title => 'Kame'  	# The window title
+		:speed => 10		# The speed that the turtle draws. This is how many lines per second should be drawn
 
 
 Contributing to kame
