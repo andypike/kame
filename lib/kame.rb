@@ -22,7 +22,7 @@ class Kame
     
     instance_eval(&block)
     
-    window = KameWindow.new(@lines, opts).show
+    KameWindow.new(@lines, opts).show
   end
   
   def pen_up
