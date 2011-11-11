@@ -22,16 +22,15 @@ class KameWindow < Gosu::Window
   end
   
   def update
-    puts "In update"
     @this_frame = Gosu::milliseconds
-    puts "This Frame: #{@this_frame}"
     @seconds_since_last_frame = (@this_frame - @first_frame) / 1000.0
-    puts "Since Last: #{@seconds_since_last_frame}"
   end
   
   def draw
     puts "Since Last In Draw: #{@seconds_since_last_frame}"
+    puts "Lines: #{@lines.count}"
     self.draw_background
+    puts "Since Last In Draw 2: #{@seconds_since_last_frame}"
     return if @lines.nil? || @lines.count == 0 || @seconds_since_last_frame.nil?
     
     max = (@seconds_since_last_frame * @speed).round
