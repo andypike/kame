@@ -28,7 +28,7 @@ class KameWindow < Gosu::Window
   
   def draw
     self.draw_background
-    return if @lines.nil? || @lines.count == 0
+    return if @lines.nil? || @lines.count == 0 || @seconds_since_last_frame.nil?
     
     max = (@seconds_since_last_frame * @speed).round
     if max > @lines.count - 1
