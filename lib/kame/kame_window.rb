@@ -30,6 +30,7 @@ class KameWindow < Gosu::Window
   end
   
   def draw
+    puts "Since Last In Draw: #{@seconds_since_last_frame}"
     self.draw_background
     return if @lines.nil? || @lines.count == 0 || @seconds_since_last_frame.nil?
     
