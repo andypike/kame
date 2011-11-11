@@ -9,7 +9,7 @@ class Kame
       :x => 0,
       :y => 0,
       :rotation => 0,
-      :line_colour => KameColours::lookup[:white]
+      :line_colour => KameColours::lookup[:black]
     }
   
     opts = {
