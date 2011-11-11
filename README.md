@@ -18,10 +18,10 @@ Each command is on a new line and they are executed in order.
 
 As this is using Ruby, you also have access to Ruby constructs such as loops and functions.
 
-Notice
-------
+Platforms
+---------
 
-I've tested this on OSX and it works fine. However, there seems to be an issue on Windows 7 when creating the Gosu window. I'll investigate.
+I've tested this on OSX Snow Leopard and also Windows 7. Both work fine :o) It should also work on OSX Lion and Linux in theory, but I haven't tested this yet. Please let me know if you try it.
 
 Install
 -------
