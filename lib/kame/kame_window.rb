@@ -22,8 +22,11 @@ class KameWindow < Gosu::Window
   end
   
   def update
-     @this_frame = Gosu::milliseconds
-     @seconds_since_last_frame = (@this_frame - @first_frame) / 1000.0
+    puts "In update"
+    @this_frame = Gosu::milliseconds
+    puts "This Frame: #{@this_frame}"
+    @seconds_since_last_frame = (@this_frame - @first_frame) / 1000.0
+    puts "Since Last: #{@seconds_since_last_frame}"
   end
   
   def draw
