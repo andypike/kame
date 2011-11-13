@@ -133,9 +133,9 @@ Here is a list of all options with their default values (all are optional):
 	:paper => :white					# The colour of the paper (from the list above)
 	:title => 'Kame'  				# The window title
 	:speed => 10							# The speed that the turtle draws. This is how many lines per second should be drawn
-  :grid => false						# Should the help grid be displayed (true | false)?
+	:grid => false						# Should the help grid be displayed (true | false)?
 	:grid_size => 8						# If the help grid is displayed, this is how many rows and columns should be drawn
-  :grid_colour => :silver		# If the help grid is displayed, this is the colour for the grid (from the list above)
+	:grid_colour => :silver		# If the help grid is displayed, this is the colour for the grid (from the list above)
 
 
 
