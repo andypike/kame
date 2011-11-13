@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "kame"
-  s.version = "0.4.0"
+  s.version = "0.5.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Andy Pike"]
-  s.date = "2011-11-11"
+  s.date = "2011-11-13"
   s.description = "Kame (Japanese for turtle) is an implementation of the Logo programming language built as a challenge to myself. I wanted a simple way to introduce programming in Ruby to my daughter and thought this would be fun. With Kame, you control the movement of a turtle around the screen by programming commands. With these simple commands your turtle will draw you a picture. It's a nice introduction to programming for kids and will also help their maths :o)"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".document",
+    "CHANGE_LOG.txt",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
