@@ -17,7 +17,10 @@ class Kame
       :height => 480,
       :paper => :white,
       :title => 'Kame',
-      :speed => 10
+      :speed => 10,
+      :grid_size => 8,
+      :grid_colour => :silver,
+      :grid => false
     }.merge(options)
     
     instance_eval(&block)
@@ -29,8 +32,9 @@ class Kame
     @state[:pen_down] = false
   end
   
-  def pen_down
+  def pen_down(colour = nil)
     @state[:pen_down] = true
+    colour(colour) unless colour.nil?
   end
   
   def pen_down?
@@ -46,7 +50,12 @@ class Kame
   end
   
   def colour(colour)
-    @state[:line_colour] = KameColours::lookup[colour]
+    new_colour = KameColours::lookup[colour]
+    if new_colour.nil?
+      new_colour = KameColours::lookup[:black]
+      puts "Can't find the colour '#{colour.to_s}', using black instead."
+    end  
+    @state[:line_colour] = new_colour
   end
   
   def forward(distance)

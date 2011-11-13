@@ -74,9 +74,14 @@ To move the turtle backward by 75 pixels from it's current position, you can use
 
 	backward 75
 		
-To tell the turtle to put his pen down onto the paper use the `pen_down` command:
+You can change the colour of the turtle's pen at any time (on the paper or not) with the `colour` command:
+
+	colour :pink
+
+To tell the turtle to put his pen down onto the paper use the `pen_down` command. There is an optional parameter for the pen colour to switch to, if not supplied the pen is not changed:
 		
 	pen_down
+	pen_down :red
 
 To tell the turtle to pick his pen up again, use the `pen_up` command:
 
@@ -89,10 +94,6 @@ You can ask the turtle to rotate 90 degrees to the left (anti-clockwise) on the 
 You can ask the turtle to rotate 90 degrees to the right (clockwise) on the spot without moving by using the `turn_right` command:
 
 	turn_right 90
-
-You can change the colour of the turtle's pen at any time (on the paper or not) with the `colour` command:
-
-	colour :pink
 		
 Colours
 -------
@@ -107,6 +108,14 @@ Here is a list of the available colours:
 	:yellow
 	:pink
 	:grey
+	:orange
+	:purple
+	:brown
+	:peach
+	:turquoise
+	:silver
+	:gold
+	:violet
 
 Options
 -------
@@ -119,11 +128,15 @@ In addition to commanding the turtle, there are some options you can specify. Yo
 
 Here is a list of all options with their default values (all are optional):
 
-	:width => 640 		# The width of the paper in pixels
-	:height => 480		# The height of the paper in pixels
-	:paper => :white	# The colour of the paper (from the list above)
-	:title => 'Kame'  	# The window title
-	:speed => 10		# The speed that the turtle draws. This is how many lines per second should be drawn
+	:width => 640 						# The width of the paper in pixels
+	:height => 480						# The height of the paper in pixels
+	:paper => :white					# The colour of the paper (from the list above)
+	:title => 'Kame'  				# The window title
+	:speed => 10							# The speed that the turtle draws. This is how many lines per second should be drawn
+  :grid => false						# Should the help grid be displayed (true | false)?
+	:grid_size => 8						# If the help grid is displayed, this is how many rows and columns should be drawn
+  :grid_colour => :silver		# If the help grid is displayed, this is the colour for the grid (from the list above)
+
 
 
 Contributing to kame

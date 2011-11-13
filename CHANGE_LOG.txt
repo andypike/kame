@@ -1,0 +1,15 @@
+0.5.0
+
+* Added more colours as selected by my 6yo daughter.
+* Added an optional colour param to pen_down.
+* Added defensive check for valid colour names.
+* Added grid. See options, off by default.
+
+0.4.0
+
+* Fixed bug when on Windows. The gosu draw method was called before update on the first time round and so the time variable wasn't available. Now works on Windows.
+* Changed the default pen to black as the default paper is white.
+
+0.3.0
+
+* Initial public release
